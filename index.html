@@ -8,12 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="entry-fields">
-        <input class="x-input" type="number">
-        <input class="y-input" type="number"><br>
-        <button class="btn-mk-grid">make grid</button>
+    <div class="big-container">
+        <div class="entry-fields">
+            <div class="pen-coloring">
+                <label class="entry pen">PEN COLOR</label>
+                <input class="entry pen color" type="color" value="#191970">
+            </div>
+            <div class="bg-coloring">
+                <label class="entry">BACKGROUND COLOR</label>
+                <input class="entry bg-color-pick color" type="color" value="#ffffff">  
+            </div>
+            <div class="grid-sizing">
+                <div class="x-sizing">
+                    <label class="entry">ROWS</label>
+                    <input class="entry x-input" type="number" value=60 max=100>
+                </div>
+                <div class="y-sizing">
+                    <label class="entry">COLUMNS</label>
+                    <input class="entry y-input" type="number" value=60 max=100>
+                </div>
+            </div>
+            <a class="entry btn-mk-grid">make grid</a>
+            <a class="entry btn-shading">shading</a>
+            <a class="entry btn-go-rainbow">go rainbow</a>
+        </div>
+        <div class="container"></div>
     </div>
-    <div class="container"></div>
+    
+    
 
     <script src="script.js"></script>
 </body>

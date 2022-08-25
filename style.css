@@ -1,19 +1,118 @@
 html {
     font-size: 10px;
-    background-color:cornsilk;
+    background-color: rgb(216, 235, 238);
+    /* background-color:#ECAEFC; */
 }
 
 body,html {
     margin: 0;
     padding: 0;
-    font-family:Helvetica, Arial, sans-serif
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+.big-container {
+    display: flex;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10rem;
+    margin: 1rem;
+    flex: 1;
+}
+
+.entry-fields {
+    margin: 2rem 2rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content:space-between
+}
+
+.pen-coloring {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-coloring {
+    display: flex;
+}
+
+.grid-sizing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.x-sizing {
+    display: flex;
+}
+
+.y-sizing {
+    display: flex;
+}
+
+.entry {
+    flex: 1;
+}
+
+
+a {
+    padding: 1rem;
+    min-width: 10rem;
+    background-color: #c0c0c0;
+    border-radius: 4px;  
+    cursor: pointer;
+}
+
+a:hover {
+    /* background-color: #a8a8a8; */
+    filter: brightness(85%);
+}
+
+.btn-shading:hover {
+    background-image: linear-gradient(90deg, #c0c0c0 0%, #4e4e4e 100%);    
+}
+
+.btn-go-rainbow:hover {
+    background-image: linear-gradient(90deg, #fb79ff 0%, #6bd0ff 50%, #4ffc91 100%);
+}
+
+.shading {
+    background-image: linear-gradient(90deg, #c0c0c0 0%, #4e4e4e 100%);    
+}
+
+.rainbow {
+    background-image: linear-gradient(90deg, #fb79ff 0%, #6bd0ff 50%, #4ffc91 100%);
+}
+
+
+
+input {
+    min-width: 6rem;
+    max-width: 8rem;
+}
+
+input[type="color"] {
+    appearance: none;
+    border:solid 1px transparent;
+    border-radius: 10px;
+    padding:0;
+    background:white;
+    box-sizing:unset;
+}
+
+input[type="color" i]::-webkit-color-swatch {
+    border:solid 1px transparent;
+    border-radius: 10px;
+}
+
+input[type="color"]
+
+label {
+    display: flex;
+    align-items: center;
 }
 
 .y-div {
@@ -24,13 +123,8 @@ body,html {
 
 .grid-div {
     flex: 1;
-    min-width: 1px;
-    min-height: 1px;
+    min-width: 3px;
     aspect-ratio: 1 / 1;
-    background-color: darkslateblue;
-    margin: 1px;
+    background-color: white;
 }
 
-div.grid-div:hover {
-    background-color: chartreuse;
-}
